@@ -168,22 +168,23 @@ export default function Hero({ openLegal }) {
               <div className="flex flex-col items-center lg:items-start">
                 {/* 1. Speech-like Sequencing - Upgraded to Broadway Scale */}
                 <h1 className="text-[clamp(1.75rem,7vw,4.5rem)] font-bold leading-[0.92] md:leading-[0.95] tracking-[-0.06em] text-slate-900 lg:pr-4 text-center lg:text-left">
-                  <motion.span variants={revealVariants(0.5, textDelay1)} initial="hidden" animate="visible" className="block text-slate-400 font-medium text-[clamp(1.05rem,4vw,2rem)] mb-4 tracking-[-0.03em]">I’m not here to</motion.span>
+                  <motion.span variants={revealVariants(0.5, textDelay1)} initial="hidden" animate="visible" className="block text-slate-400 font-medium text-[clamp(1.05rem,4vw,2rem)] mb-4 tracking-[-0.03em]">We are building</motion.span>
                   <motion.span variants={revealVariants(0.6, textDelay2)} initial="hidden" animate="visible" className="flex flex-wrap justify-center lg:justify-start text-slate-900 drop-shadow-sm">
-                    <span className="italic text-blue-600 pr-2 md:pr-3 drop-shadow-[0_0_20px_rgba(37,99,235,0.2)]">sell you</span>
-                    <span className="opacity-90">a website.</span>
+                    <span className="italic text-blue-600 pr-2 md:pr-3 drop-shadow-[0_0_20px_rgba(37,99,235,0.2)]">AI-Powered</span>
+                    <span className="opacity-90">Projects.</span>
                   </motion.span>
                 </h1>
                 
                 <motion.div variants={revealVariants(0.5, textDelay3)} initial="hidden" animate="visible" className="h-10 md:h-16" />
 
                 <motion.h2 variants={revealVariants(0.6, textDelay3)} initial="hidden" animate="visible" className="text-[clamp(1.15rem,4.5vw,2.5rem)] font-bold text-slate-800 tracking-tight pb-2 lg:pb-3 leading-[1.15] text-center lg:text-left">
-                  I build systems that bring <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">customers</span>, organize your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">memories</span>, and grow your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">business</span>.
+                  Accelerated by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">Growth Partnerships</span>, built with extreme <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">performance</span>, and designed for <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">scale</span>.
                 </motion.h2>
 
                 <motion.p variants={revealVariants(0.5, textDelay4)} initial="hidden" animate="visible" className="mt-6 text-sm lg:text-[17px] text-slate-500 font-medium leading-relaxed max-w-xl text-center lg:text-left">
-                  From lead-generating websites to private digital album platforms. Everything is built for real results.
+                  From custom machine learning integrations to high-conversion automated funnels and AI galleries. We align directly with your revenue targets.
                 </motion.p>
+
 
                 {/* Sub-positioning Line */}
                 <motion.p variants={revealVariants(0.5, textDelay4 + 0.3)} initial="hidden" animate="visible" className="mt-6 md:mt-10 text-xs md:text-md text-slate-400 font-bold tracking-widest uppercase flex items-center justify-center lg:justify-start">
