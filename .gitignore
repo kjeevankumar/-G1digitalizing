@@ -21,3 +21,14 @@ _tmp_*.py
 *.njsproj
 *.sln
 *.sw?
+
+# Untracked Local Files (Removed from GitHub)
+agency-website/
+*.pdf
+*.mp4
+*.py
+DHsXcE26RziRKRqdiE_mag@2k.webp
+bback.webp
+digital_album_placeholder.png
+screencapture-localhost-5173-2026-04-04-12_59_35.png
+
