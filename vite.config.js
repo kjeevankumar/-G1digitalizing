@@ -7,3 +7,5 @@ export default defineConfig({
   base: './',
 })
 
+// Trigger automated build webhook for Vercel
+
