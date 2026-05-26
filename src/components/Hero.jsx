@@ -178,8 +178,9 @@ export default function Hero({ openLegal }) {
                 <motion.div variants={revealVariants(0.5, textDelay3)} initial="hidden" animate="visible" className="h-10 md:h-16" />
 
                 <motion.h2 variants={revealVariants(0.6, textDelay3)} initial="hidden" animate="visible" className="text-[clamp(1.15rem,4.5vw,2.5rem)] font-bold text-slate-800 tracking-tight pb-2 lg:pb-3 leading-[1.15] text-center lg:text-left">
-                  Accelerated by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">Growth Partnerships</span>, built with extreme <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">performance</span>, and designed for <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">scale</span>.
+                  We build systems that <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">automate operations</span>, deploy <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">AI</span>, and scale your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">business</span>.
                 </motion.h2>
+
 
                 <motion.p variants={revealVariants(0.5, textDelay4)} initial="hidden" animate="visible" className="mt-6 text-sm lg:text-[17px] text-slate-500 font-medium leading-relaxed max-w-xl text-center lg:text-left">
                   From custom machine learning integrations to high-conversion automated funnels and AI galleries. We align directly with your revenue targets.
