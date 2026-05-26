@@ -87,6 +87,54 @@
       }
     </style>
     <div id="root"></div>
+
+    <!-- Fail-safe Pre-loader Handler -->
+    <script>
+      (function() {
+        var forceHideLoader = function() {
+          var loader = document.getElementById('premium-loader');
+          if (loader && loader.style.display !== 'none') {
+            loader.style.opacity = '0';
+            setTimeout(function() {
+              loader.style.display = 'none';
+            }, 600);
+          }
+          var rootEl = document.getElementById('root');
+          if (rootEl && !rootEl.classList.contains('loaded')) {
+            rootEl.classList.add('loaded');
+          }
+        };
+        // Safeguard: Hide loader after 2.5s under any condition
+        setTimeout(forceHideLoader, 2500);
+        // Hide loader when loading finishes
+        window.addEventListener('load', forceHideLoader);
+      })();
+    </script>
+
+    <!-- Visual Error Diagnostics Overlay for live troubleshooting -->
+    <div id="debug-error-overlay" style="display: none; position: fixed; top: 10px; left: 10px; right: 10px; background: rgba(239, 68, 68, 0.95); color: #ffffff; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 12px; z-index: 999999999; box-shadow: 0 10px 30px rgba(0,0,0,0.3); max-height: 80vh; overflow-y: auto;">
+      <h3 style="margin-top: 0; font-size: 14px; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 8px; margin-bottom: 8px;">⚠️ Live Diagnostic Log</h3>
+      <div id="debug-error-content"></div>
+    </div>
+    <script>
+      window.addEventListener('error', function(e) {
+        var overlay = document.getElementById('debug-error-overlay');
+        var content = document.getElementById('debug-error-content');
+        if (overlay && content) {
+          overlay.style.display = 'block';
+          content.innerHTML += '<p style="margin: 4px 0;"><strong>Error:</strong> ' + e.message + '<br><small style="opacity: 0.8;">at ' + e.filename + ':' + e.lineno + ':' + e.colno + '</small></p>';
+        }
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        var overlay = document.getElementById('debug-error-overlay');
+        var content = document.getElementById('debug-error-content');
+        if (overlay && content) {
+          overlay.style.display = 'block';
+          content.innerHTML += '<p style="margin: 4px 0;"><strong>Unhandled Promise Rejection:</strong> ' + (e.reason ? (e.reason.message || e.reason) : 'Unknown reason') + '</p>';
+        }
+      });
+    </script>
+
     <script type="module" src="src/main.jsx"></script>
   </body>
 </html>
