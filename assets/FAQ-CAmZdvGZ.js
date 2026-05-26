@@ -1,4 +1,4 @@
-import{A as e,D as t,O as n,t as r}from"./proxy-CMKaV_3_.js";import{t as i}from"./createLucideIcon-CZ7rR_An.js";import{s as a,t as o}from"./index-BtLeWgd4.js";var s=i(`chevron-down`,[[`path`,{d:`m6 9 6 6 6-6`,key:`qrunsl`}]]),c=e(n(),1),l=t(),u=[{question:`How will this actually bring me customers?`,answer:`This is not just a website.
+import{A as e,D as t,O as n,t as r}from"./proxy-CMKaV_3_.js";import{t as i}from"./createLucideIcon-CZ7rR_An.js";import{s as a,t as o}from"./index-C22678Ds.js";var s=i(`chevron-down`,[[`path`,{d:`m6 9 6 6 6-6`,key:`qrunsl`}]]),c=e(n(),1),l=t(),u=[{question:`How will this actually bring me customers?`,answer:`This is not just a website.
 
 We create a simple system where people discover you, trust you, and take action.
 
