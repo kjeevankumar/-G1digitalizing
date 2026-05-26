@@ -1,5 +1,11 @@
 # G1 Digitalizing — AI Engineering & Growth Systems
 
+### 🌐 Live Website Links
+* **Primary URL (Vercel):** [g1digitalizing.vercel.app](https://g1digitalizing.vercel.app)
+* **Mirror URL (GitHub Pages):** [kjeevankumar.github.io/-G1digitalizing](https://kjeevankumar.github.io/-G1digitalizing/)
+
+---
+
 G1 Digitalizing is a premium engineering and growth agency. We build systems that automate operations, deploy AI, and scale your business to align directly with your revenue targets.
 
 From custom machine learning integrations to high-conversion automated funnels and AI galleries, we engineer high-performance software and growth architectures for businesses, events, and scaling brands.
